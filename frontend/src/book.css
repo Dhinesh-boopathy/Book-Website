@@ -1,0 +1,112 @@
+.book-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.books {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  width: 100%;
+}
+
+.book-item { 
+  margin: 20px;
+  width: 400px;
+}
+
+.card {
+  height: 300px;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border: 1px solid (135deg, #009245, #065b72);
+  border-radius: 10px ;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+img {
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.searchAdd {
+  display: flex;
+  height: 70px;
+  
+  align-items: center;
+}
+.search{
+  display: flex;
+  text-align: center;
+  width: 500px;
+  margin-right: 30px;
+}
+.bookPageHeading{
+  width: 800px;
+}
+.add{
+  margin-right: 100px;
+  box-shadow: 0px 4px 6px rgb(143, 143, 235);
+  border: 1px solid silver;
+  border-radius: 10px;
+}
+.searchInput{
+  border-radius: 15px;
+  border: 1px solid rgb(105, 104, 104);
+  box-shadow: 0px 4px 6px rgb(180, 180, 235);
+}
+.form{
+  height: 400px;
+  width: 500px;
+}
+.textarea{
+  height: 150px;
+}
+.form div {
+  margin-bottom: 10px;
+}
+.newBook{
+  display: flex;
+  justify-content: center;
+
+}
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.delete{
+  width: 90px;
+}
+
+.addedTime{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+  
+}
+
+.headingDiv{
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+  height: 60px;
+}
+

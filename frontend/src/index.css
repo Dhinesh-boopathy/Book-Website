@@ -1,0 +1,381 @@
+
+.navbar {
+  background-color: #4caa97; /* Dark blue-gray background */
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(206, 160, 160, 0.1);
+  z-index: 100;
+  width: 100%;
+}
+/* Navbar Dropdown Menu Styling */
+.navbar .user {
+  cursor: pointer;
+  position: relative;
+}
+.morePageImage{
+  width: 200px;
+  height: 200px;
+}
+.hrTag{
+  width: 1300px;
+}
+.commentFormContainer{
+  margin-right: 30px;
+  margin-top: 40px;
+}
+.comments{
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.commentsList {
+  
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+}
+
+
+
+.commentContainer {
+  width: 700px;
+  position: relative;
+  padding: 10px 0 40px; /* Add bottom padding for timestamp space */
+  border-bottom: 1px solid #ccc; /* Add border instead of <hr> */
+}
+
+.commentUser {
+  font-weight: bold;
+}
+
+.eachComment {
+  margin-top: 5px;
+}
+
+.commentTime {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 12px;
+  color: #888;
+}
+
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333; /* Dark background */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  border-radius: 8px; /* Softer rounded corners */
+  overflow: hidden;
+  z-index: 1000;
+  min-width: 160px;
+  display: none;
+}
+
+/* Show dropdown when it's activated */
+.dropdown-container .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 12px 16px;
+  color: #fff; /* White text for contrast */
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle line between items */
+}
+
+.dropdown-item:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+.dropdown-item:hover {
+  background-color: #555; /* Slightly lighter on hover */
+}
+
+.dropdown-item button {
+  border: none;
+  background: none;
+  color: #fff;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.dropdown-item button:hover {
+  background-color: #555; /* Hover effect for buttons */
+}
+
+/* Add icons with some spacing */
+.dropdown-item i {
+  margin-right: 8px;
+}
+
+/* Optional: Highlight the username section on hover */
+.navbar .user:hover {
+  color: #fff; /* White text */
+  background-color: #444; /* Slight highlight on hover */
+  padding: 5px 10px;
+  border-radius: 5px; /* Add some rounding */
+}
+
+/* Example: Dropdown button caret color */
+.bi-caret-down-fill {
+  color: #fff; /* Change color of the caret */
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+/* Ensure the logout button has proper alignment and padding */
+.logoutButton {
+  width: 100%;
+  padding: 12px 16px;
+  color: #fff;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.logoutButton:hover {
+  background-color: #555;
+}
+
+
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ecf0f1; /* Light gray */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand i {
+  margin-right: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+
+.navbar-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ecf0f1; /* Light gray */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #1abc9c; /* Bright teal on hover */
+}
+
+/* Right-aligned login/signup and user section */
+.loginLink {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  font-size: 1.1rem;
+  color: #a0e0d4; /* Bright teal for logged-in user */
+  margin-right: 1rem;
+}
+
+.logoutButton {
+  background-color: #8b7673; /* Red logout button */
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+.bi-box-arrow-right,
+.bi-box-arrow-in-left {
+  margin-right: 5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .loginLink {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .logoutButton,
+  .navbar-link {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+.user{
+  font-size: 18px;
+}
+
+.search-icon {
+  margin-right: 10px;
+}
+
+.profile-icon {
+  margin-right: 5px;
+}
+.logoutButton{
+  box-shadow: 0px 4px 6px rgb(143, 143, 235);
+  border: 1px solid silver;
+  border-radius: 10px;
+}
+.commentFormContainer{
+  margin-left: 100px;
+}
+.commentTextarea{
+  height: 150px;
+  width: 250px;
+}
+.cardButtons{
+  display: flex;
+  height: 50px;
+  width: 320px;
+}
+.addToFav{
+  margin-left: -80px;
+  width: 50px;
+   margin-right: 100px;
+  box-shadow: 0px 4px 6px rgb(143, 143, 235);
+  border: 1px solid silver;
+  border-radius: 10px;
+}
+.moreButton{
+  margin-left: 20px;
+}
+
+.favPage{
+  margin-top: 110px;
+}
+.remove{
+  border-radius: 10px;
+  height: 50px;
+  margin-left: -80px;
+}
+.profile {
+  margin-right: 70px;
+}
+.whole {
+  padding-top: 100px; /* Adjust the value based on your navbar height */
+}
+.loginDiv,.signupDiv,.newBook,.favorite,.more{
+  margin-top: 150px;
+}
+.login,.signUp{
+  margin-top: 100px;
+  width: 400px;
+  margin: auto;
+}
+
+.horizontal{
+  display: flex;
+}
+
+.signupLink,.loginLink{
+  margin-left: -20px;
+  font-size: 14px;
+}
+
+.myfiles{
+  margin-top: 100px;
+}
+
+/* General styling for comments container */
+.comments {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between the comments list and form */
+}
+
+/* Style for comments list */
+.commentsList {
+  
+  border: 1px solid #ccc; /* Border styling */
+  padding: 10px; /* Padding inside the comments area */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+/* Style for comment form */
+.commentFormContainer {
+  flex: 0 0 300px; /* Base width for comment form */
+  max-width: 100%; /* Prevent it from exceeding the width */
+}
+
+.commentForm {
+  border: 1px solid #ccc; /* Border around the form */
+  padding: 15px; /* Padding inside the form */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.commentTextarea {
+  width: 100%; /* Full width for the textarea */
+  height: 100px; /* Fixed height */
+  resize: vertical; /* Allow only vertical resizing */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Style for individual comment */
+.commentContainer {
+  position: relative;
+  padding-bottom: 30px; /* Space for the time display */
+}

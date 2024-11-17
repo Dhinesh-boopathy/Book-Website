@@ -1,0 +1,43 @@
+.about-page {
+    padding: 20px;
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the content */
+    font-family: Arial, sans-serif; /* Use a clean, readable font */
+    color: #333; /* Dark gray text color */
+}
+
+.about-page h1 {
+    color: #2c3e50; /* Darker color for the main heading */
+    font-size: 2.5rem; /* Larger font size for the main heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-page h2 {
+    margin-top: 20px; /* Space above the subheadings */
+    color: #2980b9; /* Blue color for subheadings */
+    font-size: 1.8rem; /* Slightly larger font for subheadings */
+}
+
+.about-page p {
+    line-height: 1.6; /* Increase line height for better readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+.about-page ul {
+    list-style-type: disc; /* Use disc for list items */
+    padding-left: 20px; /* Indent the list */
+    margin-bottom: 20px; /* Space below the list */
+}
+
+.about-page li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.about-page a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.about-page a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
